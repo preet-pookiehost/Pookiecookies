@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redeem Code</title>
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/1348255891006160918/1360841131822157844/536b59270abbcaf66bf9b4a386e322f0_enhanced.webp.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://cdn.discordapp.com/attachments/1348255891006160918/1359037300444758158/apps.29741.14581193029730121.5999c68b-7fd8-48ec-b0cb-3e37e1d7ec03.png?ex=67fbf45e&is=67faa2de&hm=fe426ce60e3dc4e254b4c51eecb949d009f45636f63b9f3d5ac73f392118aa34&') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      margin-top: 80px;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .redeem-code {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      background-color: #111;
+      padding: 10px;
+      border-radius: 8px;
+      word-break: break-word;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px 5px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #7289da;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #5b6eae;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+      color: #ddd;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .uploader {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    .uploader img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+    <style>
+  .redeem-code {
+    color: #2ecc71; /* Professional green */
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+</style>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Here’s your redeem code!</h1>
+<div class="redeem-code" id="code">POOKIE-ODNGJ7</div>
+<button onclick="copyCode()">Copy Code</button>
+<a href="https://discord.gg/taFV45mZtN" target="_blank">
+  <button>Back to Discord</button>
+</a>
+    <div class="uploader">
+      <img src="https://cdn.discordapp.com/attachments/1348255891006160918/1360848786645192785/485dfea3488f5c1bbc9bcfa104f0907f.jpg?ex=67fc9cb2&is=67fb4b32&hm=42de253ce5cc4b63198e9883264da7e89caea9605d4339cd0053b511c2a84790&" alt="Uploader">
+      <span>Uploaded by <strong>Preet</strong></span>
+    </div>
+  </div>
+
+  <div class="footer">© 2025 PookieHost</div>
+
+  <script>
+    function copyCode() {
+      const codeText = document.getElementById("code").innerText;
+      navigator.clipboard.writeText(codeText).then(() => {
+        alert("Code copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
